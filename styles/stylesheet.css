@@ -2,35 +2,43 @@ body{
     max-width: 1160px;
     margin: auto;
     padding: 10px;
-    font-family: 'Raleway', sans-serif; /* Utilisez Raleway pour tout le contenu */
+    font-family: "Raleway", sans-serif; /* Utilisez Raleway pour tout le contenu */
 }
 
 h1, h2, h3{
     font-family: "Lato", sans-serif; /* Utilisez Lato pour les titres */
 }
+h1{
+    font-size: xx-large;
+}
+h2{
+    font-size: medium;
+    padding: 20px;
+}
 @font-face {
-    font-family: 'Raleway';
-    src: url("fonts/Raleway-Regular.woff") format("woff"); /* Ajoutez des formats supplémentaires si nécessaire */
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.woff") format("woff");
     src: url("fonts/Raleway-Bold.woff") format("woff");
-    src:url("fonts/Raleway-Italic.woff") format("woff");
+    src: url("fonts/Raleway-Italic.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
+
+
+/*partie en tete*/
 .profile-picture{
-    width: 150px; /* Ajuster la largeur de l'image */
+    width: 150px; 
     height: auto; /* Maintenir le ratio hauteur/largeur */
     border-radius: 50%; /* Rendre l'image ronde */
     margin-bottom: 10px; /* Ajouter un peu d'espace en bas de l'image */
-    box-shadow: 0 0 10px 5px #dbc2a4;
-    cursor: zoom-in;      
+    box-shadow: 0 0 10px 5px #dbc2a4;/*ajouter une ombre degradée autour de l'image*/
+    cursor: zoom-in;/*cganger le curseur souris au survol*/    
 }
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: relative;
-    top: 0;
     background-color: #782221;
     padding: 0.6em 0 0 0;
 }
@@ -43,35 +51,54 @@ h1, h2, h3{
 }
 .contact a{
     text-decoration: none; /* Supprimer les soulignements des liens */
-    color: #ffffff; /* Changer la couleur du texte des liens */
+    color: #ffffff; /* Changer la couleur du texte des liens */   
+}
+.contact a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+.adress{
+    text-align: center;
 }
 
 
+/*partie principale du cv*/
 main {
     display: flex;
 }
-
-
 .left-column {
     max-width: 20%;
     background-color: #782221;
-    padding: 0px;
+    padding-right: 10px;
 }
 p {
     padding: 10px;
     line-height: 1.5;
     text-align: justify;
 }
-
-
 .right-column{
     flex: 1;
     padding-left: 10px;
+    padding-right: 10px;
     border-right: 2px solid #782221;
 }
 h3{
     background-color: #dbc2a4;
     padding: 10px;
+}
+.right-column h3{
+    border-left: 5px solid #782221;
+}
+.right-column dt,
+.right-column dd {
+    transition: border-right 0.3s ease; /* Ajoute une transition pour une animation fluide */
+    border-right: 5px solid transparent; /* Définit une bordure droite transparente par défaut */
+}
+
+/* Ajoute une bordure à droite sur le dt et dd correspondant lors du survol */
+.right-column dt:hover,
+.right-column dd:hover {
+    border-right: 5px solid #782221; /* Couleur et épaisseur de la bordure à droite au survol */
 }
 ul{
     line-height: 2;
@@ -79,9 +106,12 @@ ul{
 dl{
     line-height: 2;
 }
+.burgundy-text{
+    color: #782221;
+}
 
 
-
+/*pied de page*/
 footer{
     display: flex;
     justify-content: center;
@@ -91,6 +121,6 @@ footer{
 footer img{
     width: 36px;
     height: auto;
-    padding-right: 10px;
+    padding-right: 10px;/*ajouter un espace entre les 2 img*/
 }
 
