@@ -1,0 +1,96 @@
+body{
+    max-width: 1160px;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif; /* Utilisez Raleway pour tout le contenu */
+}
+
+h1, h2, h3{
+    font-family: "Lato", sans-serif; /* Utilisez Lato pour les titres */
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("fonts/Raleway-Regular.woff") format("woff"); /* Ajoutez des formats supplémentaires si nécessaire */
+    src: url("fonts/Raleway-Bold.woff") format("woff");
+    src:url("fonts/Raleway-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.profile-picture{
+    width: 150px; /* Ajuster la largeur de l'image */
+    height: auto; /* Maintenir le ratio hauteur/largeur */
+    border-radius: 50%; /* Rendre l'image ronde */
+    margin-bottom: 10px; /* Ajouter un peu d'espace en bas de l'image */
+    box-shadow: 0 0 10px 5px #dbc2a4;
+    cursor: zoom-in;      
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #782221;
+    padding: 0.6em 0 0 0;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2c1d27;
+}
+.contact a{
+    text-decoration: none; /* Supprimer les soulignements des liens */
+    color: #ffffff; /* Changer la couleur du texte des liens */
+}
+
+
+main {
+    display: flex;
+}
+
+
+.left-column {
+    max-width: 20%;
+    background-color: #782221;
+    padding: 0px;
+}
+p {
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.right-column{
+    flex: 1;
+    padding-left: 10px;
+    border-right: 2px solid #782221;
+}
+h3{
+    background-color: #dbc2a4;
+    padding: 10px;
+}
+ul{
+    line-height: 2;
+}
+dl{
+    line-height: 2;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #782221;
+    padding: 10px;
+}
+footer img{
+    width: 36px;
+    height: auto;
+    padding-right: 10px;
+}
+
