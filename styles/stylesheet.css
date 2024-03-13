@@ -34,7 +34,7 @@ h2{
     box-shadow: 0 0 10px 5px #dbc2a4;/*ajouter une ombre degradée autour de l'image*/
     cursor: zoom-in;/*cganger le curseur souris au survol*/    
 }
-.header-content {
+#header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,22 +42,22 @@ h2{
     background-color: #782221;
     padding: 0.6em 0 0 0;
 }
-.contact {
+#contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #2c1d27;
 }
-.contact a{
+#contact a{
     text-decoration: none; /* Supprimer les soulignements des liens */
     color: #ffffff; /* Changer la couleur du texte des liens */   
 }
-.contact a:hover{
+#contact a:hover{
     text-decoration: underline;
     color: #ffffff;
 }
-.adress{
+#contact_adress{
     text-align: center;
 }
 
@@ -66,7 +66,7 @@ h2{
 main {
     display: flex;
 }
-.left-column {
+#left-column {
     max-width: 20%;
     background-color: #782221;
     padding-right: 10px;
@@ -76,7 +76,7 @@ p {
     line-height: 1.5;
     text-align: justify;
 }
-.right-column{
+#right-column{
     flex: 1;
     padding-left: 10px;
     padding-right: 10px;
@@ -86,18 +86,18 @@ h3{
     background-color: #dbc2a4;
     padding: 10px;
 }
-.right-column h3{
+#right-column h3{
     border-left: 5px solid #782221;
 }
-.right-column dt,
-.right-column dd {
+#right-column dt,
+#right-column dd {
     transition: border-right 0.3s ease; /* Ajoute une transition pour une animation fluide */
     border-right: 5px solid transparent; /* Définit une bordure droite transparente par défaut */
 }
 
 /* Ajoute une bordure à droite sur le dt et dd correspondant lors du survol */
-.right-column dt:hover,
-.right-column dd:hover {
+#right-column dt:hover,
+#right-column dd:hover {
     border-right: 5px solid #782221; /* Couleur et épaisseur de la bordure à droite au survol */
 }
 ul{
