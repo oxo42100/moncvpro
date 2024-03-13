@@ -89,13 +89,12 @@ h3{
 #right-column h3{
     border-left: 5px solid #782221;
 }
+/* Ajoute une bordure à droite sur le dt et dd correspondant lors du survol */
 #right-column dt,
 #right-column dd {
     transition: border-right 0.3s ease; /* Ajoute une transition pour une animation fluide */
     border-right: 5px solid transparent; /* Définit une bordure droite transparente par défaut */
 }
-
-/* Ajoute une bordure à droite sur le dt et dd correspondant lors du survol */
 #right-column dt:hover,
 #right-column dd:hover {
     border-right: 5px solid #782221; /* Couleur et épaisseur de la bordure à droite au survol */
